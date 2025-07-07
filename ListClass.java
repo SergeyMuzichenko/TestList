@@ -4,6 +4,8 @@ import java.util.List;
 public class ListClass {
     public static void main(String[] args) {
             // Создаем список контактов
+            // Вот тут можно сдклать Map или list 
+            // если Map то буде ключ имя - имя значение
             ContactList contactList = new ContactList();
 
             // Добавляем несколько контактов
@@ -12,6 +14,7 @@ public class ListClass {
             contactList.addContact("Петр Иванов", "+7-999-111-22-33");
 
             // Выводим все контакты
+            
             System.out.println("Все контакты:");
             for (Contact contact : contactList.getAllContacts()) {
                 System.out.println(contact);
@@ -24,6 +27,7 @@ public class ListClass {
             }
 
             // Поиск по номеру
+            // 
             System.out.println("\nПоиск по номеру '111':");
             for (Contact contact : contactList.findByPhone("111")) {
                 System.out.println(contact);
